@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-family: neue-haas-grotesk-display, sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+nav {
+  background-color: #111111;
+  height: 13vh;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2vw 10vw;
+  z-index: 10;
+}
+.nav-name {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5vw;
+  font-size: 0.76vw;
+  font-weight: 400;
+  text-transform: uppercase;
+  flex: 1;
+  margin: 2vh 0;
+}
+.btn-talk {
+  background-color: #0cbb57;
+  padding: 1vw 3vw;
+  border-radius: 2vw;
+  border: 0;
+}
+
+.nav-bottom {
+  height: 0vh;
+  width: 80%;
+  border-bottom: 1px solid #ffffff;
+  position: absolute;
+  top: 100%;
+  transition: all ease 0.65s;
+  z-index: 4;
+  background-color: #111111;
+}
+
+.menu p {
+  margin-bottom: 3vw;
+  cursor: pointer;
+}
+.menu h5 {
+  margin-top: 1vw;
+  display: none;
+  overflow: hidden;
+}
+.menu h5 span {
+  font-size: 0.65vw;
+  font-weight: 400;
+  position: relative;
+  z-index: 5;
+  display: inline-block;
+  transform: translateY(25px);
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111111;
+}
+.page1 h1 {
+  font-size: 6vw;
+  font-weight: 700;
+}
+.page1 h2 {
+  font-size: 1.5vw;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 2vw;
+}
+.page1 svg {
+  height: 4.5vw;
+  width: 4.5vw;
+  background-color: #0da34e;
+  border-radius: 50%;
+}
+
+.launch-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3vw;
+  font-weight: 400;
+  gap: 1vw;
+  margin-top: 3vw;
+}
+
+.launch-info p:nth-child(even) {
+  color: #0cbb57;
+}
+
+.moving-box {
+  position: absolute;
+  bottom: 5%;
+  width: 42%;
+  white-space: nowrap;
+  overflow: hidden;
+  left: 28%;
+  padding: 1.5vw;
+}
+
+.moving-box .moving {
+  display: inline-block;
+  animation: move 8s linear  infinite ;
+}
+.moving-box .moving img {
+  height: 1vw;
+  margin: 1vw;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.blur-left{
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  top: 0;
+  left: 0;
+background: linear-gradient(to right,#111111,transparent);
+  z-index: 2;
+}
+
+.blur-right{
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  top: 0;
+  right: 0;
+ 
+  background: linear-gradient(to right,transparent,#111111);
+  z-index: 2;
+}
+.page2 {
+  height: 100vh;
+  background-color: #111111;
+}
